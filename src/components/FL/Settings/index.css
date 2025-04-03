@@ -1,0 +1,25 @@
+.settingbutton{
+  display: flex;
+  margin-top: 15px;
+  gap: 10px
+}
+
+.settingselection{
+  margin: 5px;
+}
+
+.settingwrapper {
+  border: 1px solid #ccc;
+  border-radius: 12px; /* 更圆润的圆角 */
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 更明显的阴影 */
+}
+
+.settingdiv1{
+
+
+}
+.settingdiv2{
+  
+}

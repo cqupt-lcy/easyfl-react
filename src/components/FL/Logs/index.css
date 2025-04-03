@@ -1,0 +1,20 @@
+.logContent{
+  height: 250px;
+  overflow-y: auto;
+  background-color: #343a40;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  font-family: monospace;
+  white-space: pre-wrap; /* 保留换行符和空格 */
+}
+
+
+.statuswrapper{
+  border: 2px solid rgba(0, 0, 0, 0.2); /* 透明边框 */
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+}
