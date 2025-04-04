@@ -13,15 +13,20 @@ const Myaxios = axios.create({
 // 请求拦截器
 Myaxios.interceptors.request.use(
   (config) => {
-    // 在这里可以添加请求数据校验，比如必填字段检查
-    if (!config.data || Object.keys(config.data).length === 0) {
+    // 设置需要校验 data 的请求路径
+    const needCheckDataEndpoints = ['/train']; // 根据你项目的接口名填写
+
+    // 如果是需要校验 data 的请求才做检查
+    if (
+      needCheckDataEndpoints.includes(config.url) &&
+      (!config.data || Object.keys(config.data).length === 0)
+    ) {
       console.warn("请求被拦截: 发送的数据不能为空");
       alert("训练失败: 请完整输入所有参数");
       return Promise.reject(new Error("请求数据不能为空"));
     }
+
     console.log("请求发送:", config);
-
-
     return config;
   },
   (error) => {
@@ -29,6 +34,7 @@ Myaxios.interceptors.request.use(
     return Promise.reject(error);
   }
 );
+
 
 // 响应拦截器
 Myaxios.interceptors.response.use(
