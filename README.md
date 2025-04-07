@@ -2,6 +2,14 @@
 
 为了⽅便进⾏联邦学习相关的科研实验，我开发了⼀个基于FLGo开源框架（[WwZzz/easyFL: An experimental platform for federated learning.](https://github.com/WwZzz/easyFL)）的web平台，可以进⾏联邦学习训练的控制、实时监测训练过程以及查看实验结果。
 
+## TODOS
+
+- [ ] 前端功能受到后端接口限制，学习NodeJS等技术重写后端接口
+- [ ] 前端状态管理混乱，学习并使用Redux管理状态
+- [ ] 添加多任务功能
+- [ ] 添加注册登录功能
+- [ ] 优化界面
+
 ## 技术栈
 
 前端：React函数式组件+antd
