@@ -1,7 +1,13 @@
-# “炼丹炉”联邦学习web平台
+# “炼丹炉”联邦学习web平台 v1
 
 为了⽅便进⾏联邦学习相关的科研实验，我开发了⼀个基于FLGo开源框架（[WwZzz/easyFL: An experimental platform for federated learning.](https://github.com/WwZzz/easyFL)）的web平台，可以进⾏联邦学习训练的控制、实时监测训练过程以及查看实验结果。
 
+***
+“炼丹炉”联邦学习web平台 v2 https://github.com/cqupt-lcy/easyfl-v2 
+使用NodeJS+Express对后端进行了重写
+使用Redux统一管理状态
+增加任务导航栏功能，支持新增任务，删除任务，任务重命名
+支持多任务同时进行
 ## TODOS
 
 - [ ] 前端功能受到后端接口限制，学习NodeJS等技术重写后端接口

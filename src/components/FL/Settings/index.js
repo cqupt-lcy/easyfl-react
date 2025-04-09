@@ -1,10 +1,9 @@
-import { useState, useContext, useEffect, use } from "react"
-import axios from "axios"
+import { useState, useContext, useEffect } from "react"
 import { Select, InputNumber, Button, Modal, Popconfirm, notification } from "antd"
 import { QuestionCircleOutlined } from '@ant-design/icons';
 import './index.css'
 import { MyContext } from "../../../pages/content";
-import { request,Myaxios } from "../../../resource/MyAxios/myaxios";
+import { request } from "../../../resource/MyAxios/myaxios";
 export default function Settings() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [inputValue, setInputValue] = useState(JSON.parse((localStorage.getItem('inputValue'))) || {})
